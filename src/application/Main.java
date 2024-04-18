@@ -7,6 +7,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.ScrollPane;
 import javafx.stage.Stage;
+//import jfxtras.styles.jmetro.JMetro;
+//import jfxtras.styles.jmetro.Style;
 
 public class Main extends Application {
 	
@@ -23,8 +25,15 @@ public class Main extends Application {
 			
 			mainScene = new Scene(scrollPane);
 			primaryStage.setScene(mainScene);
-			primaryStage.setTitle("Sample JavaFX application");
+			primaryStage.setTitle("Aplicação Empresarial");
+			
+			//TEMA JMETRO
+			//JMetro jMetro = new JMetro();
+			//jMetro.setStyle(Style.DARK);
+			//jMetro.setScene(mainScene);
+			
 			primaryStage.show();
+			
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
